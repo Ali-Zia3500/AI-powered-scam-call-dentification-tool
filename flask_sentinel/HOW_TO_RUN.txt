@@ -1,0 +1,86 @@
+================================================================
+AI-Powered Scam Call Identification Tool - Quick Start
+================================================================
+
+PROJECT LOCATION: E:\FYP-ALI\flask_sentinel
+MODELS LOCATION: E:\FYP-ALI\Models\
+
+================================================================
+STEP 1: ACTIVATE VIRTUAL ENVIRONMENT
+================================================================
+
+Open PowerShell in the project folder and run:
+
+    cd E:\FYP-ALI
+    .\venv\Scripts\activate
+    
+OR if you're already in flask_sentinel:
+
+    cd E:\FYP-ALI
+    venv\Scripts\activate
+    cd flask_sentinel
+
+================================================================
+STEP 2: RUN THE SERVER
+================================================================
+
+Command 1 (Recommended):
+    python app.py
+
+Command 2 (Using batch file):
+    .\run.bat
+
+================================================================
+STEP 3: OPEN IN BROWSER
+================================================================
+
+URL: http://localhost:5000
+
+Login Credentials:
+    Username: test@example.com
+    Password: password123
+
+================================================================
+FEATURES
+================================================================
+
+✓ Dashboard - View statistics and recent calls
+✓ Dialer - Make calls with real-time scam detection
+✓ Call Screen - Live audio analysis during calls
+✓ Audio Analyzer - Upload audio/video files for analysis
+✓ Contacts - Manage contacts with risk levels
+✓ Call History - View past calls
+
+================================================================
+IMPORTANT PATHS
+================================================================
+
+Models: E:\FYP-ALI\Models\
+  - Whisper_model/ (transcription)
+  
+Uploaded Audio: E:\FYP-ALI\flask_sentinel\uploads\
+
+Database: E:\FYP-ALI\flask_sentinel\sentinel.db
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+If NLTK data missing:
+    python download_nltk.py
+
+If models not found:
+    Check: E:\FYP-ALI\Models\Whisper_model\
+    
+If port 5000 busy:
+    Change port in app.py line: app.run(host='0.0.0.0', port=5000)
+
+================================================================
+SUPPORTED FORMATS
+================================================================
+
+Audio: MP3, WAV, OGG, MP4, AVI, WebM
+Languages: English, Hindi (and 97+ more)
+
+================================================================
+
